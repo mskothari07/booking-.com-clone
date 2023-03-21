@@ -29,12 +29,24 @@ mongoose.connection.on("disconnected", () => {
 // app.get("/", (req, res) => {
 //   res.send("Hello");
 // });
+
 app.use(express.json());
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/hotels", hotelsRoute);
 app.use("/api/rooms", roomsRoute);
+
+app.use((err, req, res, next) => {
+  const errStatus = err.status || 500;
+  const errMessage = err.message || "Something went wrong";
+  return res.status(errStatus).json({
+    success: false,
+    status: errStatus,
+    message: errMessage,
+    stack: err.stack,
+  });
+});
 
 // Calling port
 const port = process.env.PORT || 8001;
