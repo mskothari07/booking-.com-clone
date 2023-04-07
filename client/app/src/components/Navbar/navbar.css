@@ -11,17 +11,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .logo {
-    font-weight: 500;
+    font-weight:700;
+    font-size: 23px;
 }
 
 .navButton {
     margin-left: 20px;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     cursor: pointer;
-    color: #003580;
-
+    color: blueviolet;
+    font-weight: 600;
+    background-color: white;
 }
