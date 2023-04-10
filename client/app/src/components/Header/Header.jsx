@@ -151,6 +151,7 @@ const Header = ({type}) => {
                                     >+</button>
                                 </div>
                             </div>
+                            <button className="closingButton">Done</button>
                         </div>}
                     </div>
                     <div className="headerSearchItem">
