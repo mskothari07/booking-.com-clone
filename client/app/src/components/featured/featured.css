@@ -1,0 +1,53 @@
+.featured{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.featuredItem{
+    position: relative;
+    color: black;
+   
+    overflow: hidden; 
+    border-radius: 5px;
+}
+
+.featuredImg{
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+.featuredTitles{
+    font-size: 10px;
+   
+}
+
+.featuredTitles h1 {
+    padding-top:0px;
+    margin-bottom: 0   
+}
+
+.featuredTitles h2 {
+    color: gray;
+    font-weight:normal;
+    margin-top: 0
+     
+}
+
+.listHeadingH1{
+    font-size: 20px;
+    padding-top:0px;
+    margin-bottom: 0   
+} 
+
+.listHeadingH2{
+    color: gray;
+    font-weight:normal;
+    font-size: 15px;
+    margin-top: 0
+    
+}
