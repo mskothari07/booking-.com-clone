@@ -66,6 +66,7 @@
   
   .lsOptionInput{
     width: 50px;
+    
   }
   
   .listSearch>button{
@@ -144,9 +145,7 @@
   font-size: 12px;
 }
 
-.lsOptionInput{
-  width: 50px;
-}
+
 
 .listSearch>button{
   padding: 10px;
@@ -154,7 +153,7 @@
   color: white;
   border: none;
   width: 100%;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   border-radius: 2px;
   height: 40px;
