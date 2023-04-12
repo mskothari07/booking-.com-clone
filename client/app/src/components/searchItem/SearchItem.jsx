@@ -39,7 +39,17 @@ const SearchItem = () => {
           </li>
         </ol>
       </div>
-      <div className="siDetails">Details</div>
+      <div className="siDetails">
+        <div className="siRating">
+          <span>Excellent</span>
+          <button>8.9</button>
+        </div>
+        <div className="siDetailsTexts">
+          <span className="siPrice">1100 ₹</span>
+          <span className="siTaxOp">Includes taxes and fees</span>
+          <button className="siCheckButton">More details</button>
+        </div>
+      </div>
     </div>
   );
 };

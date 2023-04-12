@@ -29,9 +29,7 @@
    cursor: pointer;
     color: black;
 }
-.siDetails{
-    flex: 1;
-}
+
 
 .siFeatures{
     font-size: 12px;
@@ -75,3 +73,59 @@
     padding: 0;
 }
 
+.siRating{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.siRating>span{
+    font-weight: 500;
+}
+
+.siRating>button{
+    background-color: #003580;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.siDetails{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.siDetailsTexts{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 20px;
+}
+
+.siPrice{
+    font-size: 24px;
+   
+}
+
+.siTaxOp{
+    font-size: 12px;
+    color: gray;
+}
+
+.siCheckButton{
+    background-color:#003580;
+    color: white;
+    font-weight: bold;
+    padding: 10px 5px;
+    border: none;
+}
+
+.siCheckButton:hover{
+    background-color: #0071c2 ;
+    cursor: pointer;
+    border: 1px solid #003580;
+}

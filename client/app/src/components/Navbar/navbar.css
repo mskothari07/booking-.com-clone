@@ -22,9 +22,18 @@
 .navButton {
     margin-left: 20px;
     border: none;
-    padding: 10px 10px;
+    padding: 10px ;
+    /* padding-bottom: 5px; */
     cursor: pointer;
-    color: blueviolet;
-    font-weight: 600;
+    color: #003580;
+    /* font-weight: 600; */
     background-color: white;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.navButton:hover{
+    background-color: #003580;
+    color: white;
+    border: 1px solid black;
 }
