@@ -45,9 +45,9 @@ const SearchItem = () => {
           <button>8.9</button>
         </div>
         <div className="siDetailsTexts">
-          <span className="siPrice">1100 ₹</span>
-          <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckButton">More details</button>
+          <span className="siPrice"> ₹ 1100 </span>
+          <span className="siTaxOp">+₹ 149 taxes and charges</span>
+          <button className="siCheckButton">See availability &nbsp;{">"} </button>
         </div>
       </div>
     </div>
