@@ -3,6 +3,8 @@ import "./featuredPlaces.css"
 // fp = featuredPlaces
 
 const FeaturedPlaces = () => {
+
+
     return (
         <div className="fp">
             <div className="fpItem">

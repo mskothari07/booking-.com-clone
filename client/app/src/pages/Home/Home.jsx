@@ -4,6 +4,7 @@ import Featured from "../../components/featured/Featured";
 import FeaturedPlaces from "../../components/featuredPlaces/FeaturedPlaces";
 import Footer from "../../components/footer/Footer";
 import MailList from "../../components/mailList/MailList";
+import HoverableLine from "../../components/modalTest/modaltest.jsx";
 import PropertyList from "../../components/propertyList/PropertyList";
 import "./Home.css";
 
@@ -21,6 +22,7 @@ const Home = () => {
         <h1 className="homeTitle">Home guests love</h1>
         <FeaturedPlaces/>
         <MailList/>
+        <HoverableLine/>
         <Footer/>
       </div>
     </div>

@@ -1,9 +1,12 @@
 import "./featured.css"
 
 const Featured = () => {
+
+   
+
     return (
         <div className="">
-        <h1 className="listHeadingH1">Explore India</h1>
+        <h1  className="listHeadingH1">Explore India</h1>
         <h2 className="listHeadingH2">These popular destinations have a lot to offer</h2>
         <div className="featured">
             <div className="featuredItem">
@@ -48,7 +51,6 @@ const Featured = () => {
                     <h2>479 properties</h2>
                 </div>
             </div>
-
         </div>
     </div>
     )
