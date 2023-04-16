@@ -20,12 +20,12 @@ const connect = async () => {
   }
 };
 
-//Handelling DB disconnection
+//Handling DB disconnection
 mongoose.connection.on("disconnected", () => {
   console.log("Disconnected from DB");
 });
 
-//middlwares
+//middleware
 
 // app.get("/", (req, res) => {
 //   res.send("Hello");
