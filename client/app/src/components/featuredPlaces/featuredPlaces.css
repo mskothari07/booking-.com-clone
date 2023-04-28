@@ -14,6 +14,7 @@
 }
 .fpImg{
     width: 100%;
+    border: 1px solid gray;
 }
 
 .fpName{

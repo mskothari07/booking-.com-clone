@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import "./searchItem.css";
 //si = SearchItem
-const SearchItem = () => {
+const SearchItem = ({item}) => {
   return (
     <div className="searchItem">
       <img
-        src="https://cf.bstatic.com/xdata/images/hotel/square600/415877953.webp?k=606632ee9efe8116a1fedfd6719c231b735f1a98966966e5967253cd7020aeb2&o=&s=1"
+        src={item.photos[0]}
         alt="Jaipur Hotel"
         className="siImg"
       />
       <div className="siDescription">
-        <h1 className="siTitle">FabHotel The Lotus</h1>
-        <span className="siDistance">9 km from center</span>
+        <h1 className="siTitle">{item.name}</h1>
+        <span className="siDistance">{item.distance}m from center</span>
         <span className="siTaxiOp">Free Airport Taxi</span>
 
         <ol className="details">
@@ -20,7 +21,7 @@ const SearchItem = () => {
             </span>
           </li>
           <li>
-            <span className="siFeatures">1 king bed </span>
+            <span className="siFeatures">{item.desc} </span>
           </li>
           <li>
             <span className="siCancelOp">
@@ -40,14 +41,18 @@ const SearchItem = () => {
         </ol>
       </div>
       <div className="siDetails">
-        <div className="siRating">
+      {item.rating &&  <div className="siRating">
           <span>Excellent</span>
-          <button>8.9</button>
-        </div>
+          <button>{item.rating}</button>
+        </div>}
         <div className="siDetailsTexts">
-          <span className="siPrice"> ₹ 1100 </span>
+          <span className="siPrice"> ₹ {item.cheapestPrice} </span>
           <span className="siTaxOp">+₹ 149 taxes and charges</span>
+
+          <Link to={`/hotels/$item._id`}>
+
           <button className="siCheckButton">See availability &nbsp;{">"} </button>
+          </Link>
         </div>
       </div>
     </div>
